@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uứng dụng máy tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<tabel>
+    <tr>
+        <td><input type="text" id="tu"></td>
+        <td><input type="text" id="van"></td>
+        <br>
+        <br>
+        <td><button type="button" onclick="bam1()"> Addtion(+)</button></td>
+        <td><button type="button" onclick="bam2()"> Subtraction(-)</button></td>
+        <td><button type="button" onclick="bam3()"> Multiplication(*)</button></td>
+        <td><button type="button" onclick="bam4()"> Divison(/)</button></td>
+    </tr>
+
+</tabel>
+<br>
+<br>
+<p id="result"></p>
+<script>
+    function bam1() {
+        let a1 = document.getElementById('tu').value;
+        let a2 = document.getElementById('van').value;
+         A1 = parseInt(a1);
+         A2 = parseInt(a2);
+        document.getElementById('result').innerHTML = "Result:" + (A1+A2);
+
+    }
+    function bam2() {
+        let a3 = document.getElementById('tu').value;
+        let a4 = document.getElementById('van').value;
+        A3 = parseInt(a3);
+        A4 = parseInt(a4);
+        document.getElementById('result').innerHTML = "Result:" + (A3 - A4);
+    }
+    function bam3() {
+        let a5 = document.getElementById('tu').value;
+        let a6 = document.getElementById('van').value;
+        A5 = parseInt(a5);
+        A6 = parseInt(a6);
+        document.getElementById('result').innerHTML = "Result:" + (A5 * A6);
+    }function bam4() {
+        let a7 = document.getElementById('tu').value;
+        let a8 = document.getElementById('van').value;
+        A7 = parseInt(a7);
+        A8 = parseInt(a8);
+        document.getElementById('result').innerHTML = "Result:" + (A7 / A8);
+    }
+
+
+
+</script>
+
+</body>
+</html>
