@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính giá điện</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập số"));
+    if (a > 0 && a < 50) {
+        alert("Số tiền:" + a + "kWh=" + a * 1.375 + "VND");
+    } else if (51 < a && a < 100) {
+        alert("Số tiền :" + a + "kWh=" + a * 2.785 + "VND");
+    } else {
+        alert("Nhập lại");
+    }
+</script>
+
+
+</body>
+</html>
