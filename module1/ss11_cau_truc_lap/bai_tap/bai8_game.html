@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<button onclick="tu()"> Chơi</button>
+<script>
+    function tu() {
+        let a = parseInt(prompt("Nhập số vào"));
+        let b = parseInt(prompt("Nhập số sau"));
+        let random = Math.floor(Math.random() * ( b-a ) + a);
+        for(; ; ){
+            let c = parseInt(prompt("Nhập giá trị người đoán"));
+            if( c>random){
+                alert("Lớn hơn");
+            }else if(c<random){
+                alert("Nhỏ hơn")
+            }else{
+                alert("Chúc mừng và kết thúc lượt chơi");
+            }
+        }
+
+    }
+</script>
+
+</body>
+</html>
