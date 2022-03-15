@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 3</title>
 </head>
 <body>
-$END$
+<script>
+    let number =[5,4,2,6,85,14,50,81,100,12]
+    let max = number[0];
+    let index = 0;
+    let averge = 0 ;
+    for( let i =0 ; i < number.length ; i++){
+        if( number[i] > max){
+            max = number[i];
+            index = i ;
+        } averge = averge + number[i] / number.length
+    }document.write("Max :" + max + "<br/>")
+    document.write("Averge : "+ averge)
+</script>
 </body>
 </html>

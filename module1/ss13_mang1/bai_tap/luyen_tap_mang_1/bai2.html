@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Bài 2</title>
 </head>
 <body>
-$END$
+<script>
+    let number = [2,3,10,14,1,24,56,14,20,52]
+    let max = number[0];
+    let index=0;
+    for(let i = 0 ; i < number.length ; i++){
+        if(number[i] > max){
+            max = number[i];
+            index = i;
+        }
+    }document.write("Max : " +  max  +  "ở vịt trí số " + index)
+</script>
+
 </body>
 </html>

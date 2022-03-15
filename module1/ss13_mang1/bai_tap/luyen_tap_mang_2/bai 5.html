@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = []
+    let b = [];
+    let check = 0;
+    for (let i = 0; i < 5; i++) {
+        a[i] = parseInt(prompt("Nhập chuỗi thứ nhất"))
+    }
+    for (let i = 0; i < 5; i++) {
+        b[i] = parseInt(prompt("Nhập chuỗi thứ 2"))
+    }
+    for (let i = 0; i < 5; i++) {
+        if (a[i] !== b[i]) {
+            alert("a not is equal to b");
+            check++;
+            break;
+        }
+    }
+    if (check === 0) {
+        alert(" a is equal to b");
+    }
+
+</script>
 </body>
 </html>

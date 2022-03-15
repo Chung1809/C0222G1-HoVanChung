@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = [1,45,3,40,5,61,7,18,29,10]
+    number.sort(function (a,b) {
+        return b-a
+
+    })
+    document.write(number)
+
+     // for( let i = 0 ; i < number.length - 1 ; i++){
+     //     for( j = i ; j < number.length ; j++){
+     //         if(number[i] < number[j]){
+     //             let a = number[i];
+     //             number[i]= number[j];
+     //             number[j]= a;
+     //         }
+     //     }alert(" Số thứ tự giảm giần :" + number)
+     // }
+</script>
 </body>
 </html>

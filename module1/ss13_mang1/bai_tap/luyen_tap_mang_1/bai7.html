@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = [2,3,-56,-42,12,-14,8,12,10,-32];
+    let N = parseInt(prompt("Nhập vào đi"));
+    for ( let i =0 ; i < number.length; i++){
+        if(number[i] == N){
+            number.splice(2,1);
+            number.push(0);
+            alert(number)
+        }
+    }
+
+</script>
 </body>
 </html>

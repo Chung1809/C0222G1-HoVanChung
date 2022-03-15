@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+       let number = [8,6,4,0,-2,-4,-8,-10,10]
+        let count = 0;
+       for( let i = 0 ; i < number.length ; i++){
+           if(number[i] < 0) {
+               count++;
+               document.write(" Số nguyên âm trong một chuỗi là :" + number[i]);
+               document.write("<br/>")
+           }
+       }document.write(" Tổng số nguyên âm là :" + count)
+
+</script>
 </body>
 </html>

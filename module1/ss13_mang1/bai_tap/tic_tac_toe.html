@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        body{margin: auto; width: 960px; background-color: azure;
+            height: auto; overflow: hidden; text-align: center}
+        button{
+            width: 60px; height: 60px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<h1><strong>TIC TAC TOE</strong></h1>
+<button onclick="ham(0)"></button>
+<button onclick="ham(1)"></button>
+<button onclick="ham(2)"></button><br>
+<button onclick="ham(3)"></button>
+<button onclick="ham(4)"></button>
+<button onclick="ham(5)"></button><br>
+<button onclick="ham(6)"></button>
+<button onclick="ham(7)"></button>
+<button onclick="ham(8)"></button>
+
+<script !src="">
+    var co = true;
+    var dem = 0;
+    function ham(btn) {
+        var node = document.getElementsByTagName('button')[btn];
+        node.innerHTML = co?"X":'O';
+        node.style.backgroundColor = co?'auqa':"yellow";
+        node.setAttribute('diseabled','true');
+        co = !co;
+        dem +=1;
+        if (dem==8){
+            alert('Gameover');
+            location.reload()
+
+        }
+    }
+</script>
 </body>
 </html>

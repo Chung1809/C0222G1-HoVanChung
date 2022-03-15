@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = [4,5,8,10,47,145,84]
+    let first = 0;
+    let last = number.length-1;
+    let a = "";
+    while(first < last){
+         a = number[first];
+        number[first] = number[last];
+         number[last] = a ;
+        first++;
+        last--;
+    }document.write(number)
+</script>
 </body>
 </html>
