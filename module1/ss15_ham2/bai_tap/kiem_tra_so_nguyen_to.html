@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    do{
+        n = prompt("Nhập số nguyên tố");
+        if(!isNaN(Number(n)) && Number(n) ){
+            n = parseInt(n);
+            break;
+        }
+    }while (true)
+    function isPrime(n) {
+        if (n < 2) {
+            return false;
+        } else if (n === 2) {
+            return true;
+        }
+        let check = true;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                check = false;
+                break;
+            }
+        }return check
+    }
+
+
+
+        if (isPrime(n)) {
+            document.write(n + " là số nguyên tố <br/>");
+        } else {
+            document.write(n + " không phải là số nguyên tố <br/>");
+        }
+
+</script>
+</body>
+</html>

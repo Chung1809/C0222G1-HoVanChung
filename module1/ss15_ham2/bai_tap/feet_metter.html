@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<table >
+    <p><input type="text" id="metter" onkeyup="convert('Metter')" > Metter</p>
+    <p><input type="text" id="feet" onkeyup="convert('Feet')" > Feet</p>
+</table>
+
+<script>
+function convert(abcd) {
+    let x ;
+    if( abcd === "Metter"){
+        x =document.getElementById("metter").value *3.279;
+        document.getElementById("feet").value = x;
+    }else{
+        x = document.getElementById("feet").value * 0.305;
+        document.getElementById("metter").value = x
+    }
+
+}
+</script>
+</body>
+</html>

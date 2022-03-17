@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function number(a,b) {
+    let count = 0;
+    for (let i = 0; i < 6; i++) {
+        a[i] = prompt("Nhập một số");
+        if (a[i] === b){
+            count++;
+        }
+
+    }if( count > 0){
+        return count
+    }else {
+        return -1
+    }
+}
+let a = [];
+let b =prompt("Nhập một số hay gì tuỳ ý" );
+alert(number(a,b))
+
+
+
+</script>
+</body>
+</html>

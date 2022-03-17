@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isNumber() {
+         for ( let i = 0 ; i < number.length ; i++){
+             if(number[i] < Min ){
+                 Min = number[i]
+             }
+         }return Min
+    }
+    let a = parseInt(prompt("Nhập số nguyên thứ nhất"))
+    let b = parseInt(prompt("Nhập số nguyên thứ hai"))
+    let c = parseInt(prompt("Nhập số nguyên thứ ba"))
+    let number =[];
+    number.push(a,b,c)
+    let Min = number[0]
+    alert(isNumber(number))
+</script>
+</body>
+</html>

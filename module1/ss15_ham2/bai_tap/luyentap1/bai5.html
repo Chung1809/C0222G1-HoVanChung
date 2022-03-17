@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function Star(name) {
+
+        let arr1 = ["Polaris","Aldebaran"," Deneb","Vega"," Altair"," Dubhe"," Regulus"];
+        let arr2 = ["Ursa"," Minor"," Tarurus"," Cygnus",", Lyra ","Aquila"," Ursa Major"," Leo"]
+            if(arr1.indexOf(name) !== -1)
+               return arr2[arr1.indexOf(name)];
+            else
+            return "Không tìm thấy";
+
+    }
+    let string = prompt("Nhập ngôi sao cần tìm kiếm :");
+    // let kiemTra = Star(string);
+    alert(Star(string))
+</script>
+</body>
+</html>
