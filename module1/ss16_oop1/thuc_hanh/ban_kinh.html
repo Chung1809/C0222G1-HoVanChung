@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let Circle = function (radius, Area) {
+         this.radius = radius;
+         this.Area = Math.PI*radius*radius;
+         this.radius_Area =function () {
+             return  "radius : " + this.radius  +" Area :"+ this.Area
+         }
+    }
+    let cicrle = new Circle(2)
+    alert(cicrle.radius_Area())
+</script>
 </body>
 </html>
