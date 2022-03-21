@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Công tắc và bóng đèn</title>
+</head>
+<body>
+<script>
+      class ElectricLamp{
+          constructor(status) {
+          this.status = status;
+          }
+          trangThaiBongDen(){
+              console.log(this.status)
+          }
+      }
+      class SwitchButton{
+
+          bat(denobj){
+              denobj.status = "Đang bật"
+              console.log("Đã bật đèn")
+          }
+          tat(denobj){
+              denobj.status = " Đang tắt"
+              console.log("Đã tắt đèn")
+
+          }
+      }
+      let den = new ElectricLamp("Tắt");
+      let ct = new  SwitchButton();
+      den.trangThaiBongDen()
+      ct.bat(den)
+      den.trangThaiBongDen()
+      ct.tat(den)
+
+
+
+
+
+</script>
+</body>
+</html>

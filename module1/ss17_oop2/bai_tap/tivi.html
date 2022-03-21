@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điều khiển tivi</title>
+</head>
+<body>
+<script>
+    class Tv{
+        constructor(chanel , volume, status) {
+            this.chanel = chanel;
+            this.volume = volume;
+            this.status = status;
+        }
+        setChanel(newChanel){
+            this.chanel = newChanel;
+        }
+        setVolume(newVolume){
+            this.volume = newVolume;
+        }
+        turnOnOff(){
+            this.status = ! this.status
+        }
+    }
+    class Remote{
+        constructor(code,tivi) {
+            this.code = code ;
+            this.tivi = tivi;
+        }
+        setTv(){
+            this.tivi = tivi;
+        }
+        changeChanel(newChanel){
+            this.tivi.setChanel(newChanel)
+        }
+        setVolume(newVolume){
+            this.volume = newVolume;
+        }
+        turnOnOff(){
+            this.status = ! this.status
+        }
+    }
+    let tv1 = new Tv(0,0,true)
+    let tv2 = new Tv(0,0,true)
+    let remote = new Remote("RM02",tv1)
+</script>
+</body>
+</html>
