@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function snt(number) {
+            let count = 0 ;
+            for (let j = 1; j <= number ; j++) {
+                if(number % j ===0){
+                    count++;
+                }
+
+            }
+
+            return count === 2;
+    }
+    function Number(a,b) {
+        let arr = [];
+        let arr1 = [];
+        let slnt = 0;
+        for (let i = 0; i < a ; i++) {
+            arr[i]=[]
+            for (let j = 0; j <b ; j++) {
+                arr[i][j] = parseInt(prompt("Nhập phần từ của mảng"))
+                if(snt(arr[i][j])){
+                    arr1.push(arr[i][j])
+                    slnt++;
+                }
+            }
+
+        }return arr1
+
+    }
+    let a = parseInt(prompt("Nhập vào một số hàng dọc"))
+    let b = parseInt(prompt("Nhập vào một số hàng ngang"))
+    console.log(Number(a,b))
+
+
+</script>
+</body>
+</html>

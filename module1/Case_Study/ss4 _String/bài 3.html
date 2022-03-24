@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function  commonCharacterCount(a,b) {
+        let kt ;
+        let count = 0;
+        let arr = a.split("");
+        while (arr.length){
+            kt =arr.shift();
+            if(b.includes(kt)){
+                b = b.replace(kt,"");
+                count++;
+            }
+        }return(count)
+
+
+    }
+    let a =prompt("Nhập kí tự 1")
+    let b = prompt("Nhập kí tự 2")
+    let kq = commonCharacterCount(a,b)
+    alert(kq)
+</script>
+</body>
+</html>

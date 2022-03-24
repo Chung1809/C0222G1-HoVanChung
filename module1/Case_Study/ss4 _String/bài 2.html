@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function differentSymbolsNaive(s) {
+        let kt = [];
+        let arr = a.split("");
+        for( let i = 0; i < arr.length;i++){
+                if(!kt.includes(arr[i])){
+                    kt.push(arr[i])
+                }
+        }
+        return kt.length;
+
+
+    }
+    let a = prompt("Nhập sâu kí tự")
+    alert(differentSymbolsNaive(a))
+</script>
+</body>
+</html>

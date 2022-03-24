@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   while(true){
+       let a = prompt("Danh sách thức uống "+"\n"+ "1.Cafe"+"\n"+"2.Cam vắt"+"\n"+ "3.Nước ép cà rốt"+"\n"+ "4.Nước ép cà chua"+"\n"+"5.Nước lọc"+"\n"+"6.Nước dừa"+"\n"+"7.Thoát")
+       let b = [2000,4000,6000,8000,10000,12000]
+       if(a == 7){
+           alert("Cám ơn quý khách đã mua hàng");
+           break;
+       }else {
+           for( let i=0; i<b.length;i++){
+               let sl = prompt("Nhập số lượng")
+               alert("Tổng số tiền phải trả : " + b[a-i]*sl)
+               break;
+           }
+       }
+   }
+</script>
+</body>
+</html>
